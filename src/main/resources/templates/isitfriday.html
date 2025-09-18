@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:if="${day.toString().toLowerCase() == 'friday'}">It is Friday!</h1>
+<h1 th:unless="${day.toString().toLowerCase() == 'friday'}">It is NOT Friday...</h1>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Today is <span th:text="${day.toString()}"></span>!</h1>
+    <img src="https://i0.wp.com/zachonleadership.com/wp-content/uploads/2019/11/Garfield.jpg?fit=1025%2C512&ssl=1" th:if="${day.toString().toLowerCase() == 'monday'}"  alt="_blank">
+</body>
+</html>
